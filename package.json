@@ -1,0 +1,41 @@
+{
+  "name": "react-native-segment-io",
+  "version": "0.1.0",
+  "description": "React Native wrapper for Segment.",
+  "main": "./src/Segment.js",
+  "files": [
+    "ios",
+    "react-native-segment-io.podspec",
+    "src"
+  ],
+  "keywords": [
+    "analytics",
+    "ios",
+    "react-native"
+  ],
+  "author": "Mark Miyashita <negativetwelve@gmail.com> (https://github.com/negativetwelve)",
+  "contributors": [
+    {
+      "name": "Mark Miyashita",
+      "email": "negativetwelve@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "repository": {
+    "url": "git+https://github.com/negativetwelve/react-native-segment-io.git",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/negativetwelve/react-native-segment-io/issues"
+  },
+  "homepage": "https://github.com/negativetwelve/react-native-segment-io",
+  "engines": {},
+  "dependencies": {},
+  "devDependencies": {
+    "babel-eslint": "7.0.0",
+    "eslint": "3.8.1"
+  },
+  "scripts": {
+    "lint": "eslint ."
+  }
+}
