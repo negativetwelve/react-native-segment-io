@@ -8,7 +8,7 @@
 
 
 #import "RNSegment.h"
-#import "SEGAnalytics.h"
+#import <Analytics/SEGAnalytics.h>
 
 
 @implementation RNSegment
