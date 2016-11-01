@@ -36,7 +36,7 @@ RCT_EXPORT_METHOD(reset) {
 }
 
 RCT_EXPORT_METHOD(identify:(NSString *)userId withTraits:(NSDictionary *)traits) {
-  [[SEGAnalytics sharedAnalytics] identify:userId, traits:traits];
+  [[SEGAnalytics sharedAnalytics] identify:userId traits:traits];
 }
 
 RCT_EXPORT_METHOD(alias:(NSString *)userId) {
