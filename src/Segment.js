@@ -21,23 +21,27 @@ class Segment {
   // --------------------------------------------------
   // Identity
   // --------------------------------------------------
-  identify(userId, traits, options) {
-    return RNSegment.identify(userId, traits, options);
+  identify(userId, traits) {
+    return RNSegment.identify(userId, traits);
   }
 
-  alias(userId, options) {
-    return RNSegment.alias(userId, options);
+  alias(userId) {
+    return RNSegment.alias(userId);
   }
 
   // --------------------------------------------------
   // Track
   // --------------------------------------------------
-  track(properties, options) {
-    return RNSegment.track(properties, options);
+  track(name, properties) {
+    return RNSegment.track(name, properties);
   }
 
-  screen(name, properties, options) {
-    return RNSegment.screen(name, properties, options);
+  screen(name, properties) {
+    return RNSegment.screen(name, properties);
+  }
+
+  flush() {
+    return RNSegment.flush();
   }
 
 }
