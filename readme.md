@@ -12,18 +12,12 @@ yarn add react-native-segment-io
 npm install --save react-native-segment-io
 ```
 
-### iOS with react-native and Cocoapods
+### iOS with Cocoapods
 
-Run the following:
-
-```bash
-react-native link react-native-segment-io
-```
-
-Then, add the following to your Podfile:
+Add the following to your Podfile:
 
 ```ruby
-pod "Analytics", "~> 3.5.2"
+pod "react-native-segment-io", path: "../node_modules/react-native-segment-io"
 ```
 
 Then run:
@@ -33,6 +27,8 @@ pod install
 ```
 
 You're done! :tada:
+
+**NOTE** Your relative path to `node_modules` may differ.
 
 ### Android
 
