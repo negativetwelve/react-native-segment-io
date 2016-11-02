@@ -11,11 +11,11 @@ Pod::Spec.new do |s|
   s.authors = package[:contributors].flat_map { |author| { author[:name] => author[:email] } }
   s.summary = package[:description]
   s.source = { git: package[:repository][:url] }
-  s.source_files = "ios/*"
   s.default_subspec = "Core"
   s.platform = :ios, "8.0"
 
   s.subspec "Core" do |ss|
+    ss.source_files = "ios/*"
     ss.dependency "Analytics", "~> 3.5.2"
     ss.dependency "React"
   end
