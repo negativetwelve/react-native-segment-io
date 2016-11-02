@@ -20,6 +20,10 @@ Pod::Spec.new do |s|
     ss.dependency "React"
   end
 
+  s.subspec "GoogleAnalytics" do |ss|
+    ss.dependency "Segment-GoogleAnalytics", "~> 1.1.4"
+  end
+
   s.subspec "Mixpanel" do |ss|
     ss.dependency "Segment-Mixpanel", "~> 1.1.0"
   end
