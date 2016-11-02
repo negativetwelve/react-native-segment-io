@@ -1,6 +1,6 @@
 {
   "name": "react-native-segment-io",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "React Native wrapper for Segment.",
   "main": "./src/Segment.js",
   "files": [
