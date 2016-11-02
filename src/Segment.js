@@ -22,11 +22,13 @@ class Segment {
   // Identity
   // --------------------------------------------------
   identify(userId, traits) {
-    return RNSegment.identify(userId, traits);
+    // Native side requires a string for the userId.
+    return RNSegment.identify(userId.toString(), traits);
   }
 
   alias(userId) {
-    return RNSegment.alias(userId);
+    // Native side requires a string for the userId.
+    return RNSegment.alias(userId.toString());
   }
 
   // --------------------------------------------------
