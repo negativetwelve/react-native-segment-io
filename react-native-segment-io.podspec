@@ -20,6 +20,10 @@ Pod::Spec.new do |s|
     ss.dependency "React"
   end
 
+  s.subspec "Amplitude" do |ss|
+    ss.dependency "Segment-Amplitude", "1.4.1"
+  end
+
   s.subspec "GoogleAnalytics" do |ss|
     ss.dependency "Segment-GoogleAnalytics", "~> 1.1.4"
   end
