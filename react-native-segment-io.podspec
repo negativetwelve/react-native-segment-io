@@ -12,8 +12,15 @@ Pod::Spec.new do |s|
   s.summary = package[:description]
   s.source = { git: package[:repository][:url] }
   s.source_files = "ios/*"
+  s.default_subspec = "Core"
   s.platform = :ios, "8.0"
 
-  s.dependency "Analytics", "~> 3.5.2"
-  s.dependency "React"
+  s.subspec "Core" do |ss|
+    ss.dependency "Analytics", "~> 3.5.2"
+    ss.dependency "React"
+  end
+
+  s.subspec "Mixpanel" do |ss|
+    ss.dependency "Segment-Mixpanel", "~> 1.1.0"
+  end
 end
