@@ -1,5 +1,10 @@
 # react-native-segment-io
 
+[![npm](https://img.shields.io/npm/v/react-native-segment-io.svg)](https://www.npmjs.com/package/react-native-segment-io)
+[![npm](https://img.shields.io/npm/dt/react-native-segment-io.svg)](https://www.npmjs.com/package/react-native-segment-io)
+[![npm](https://img.shields.io/npm/l/react-native-segment-io.svg)](https://github.com/negativetwelve/react-native-segment-io/blob/master/LICENSE)
+[![CircleCI branch](https://img.shields.io/circleci/project/github/negativetwelve/react-native-segment-io/master.svg)](https://circleci.com/gh/negativetwelve/react-native-segment-io)
+
 React Native wrapper for [Segment](https://segment.com).
 
 ## Setup
