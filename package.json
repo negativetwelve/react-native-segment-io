@@ -2,15 +2,16 @@
   "name": "react-native-segment-io",
   "version": "0.4.1",
   "description": "React Native wrapper for Segment.",
-  "main": "./src/Segment.js",
+  "main": "./build/Segment.js",
   "files": [
+    "build",
     "ios",
-    "react-native-segment-io.podspec",
-    "src"
+    "react-native-segment-io.podspec"
   ],
   "keywords": [
     "analytics",
     "ios",
+    "jolt",
     "react-native"
   ],
   "author": "Mark Miyashita <negativetwelve@gmail.com> (https://github.com/negativetwelve)",
@@ -32,10 +33,24 @@
   "engines": {},
   "dependencies": {},
   "devDependencies": {
-    "babel-eslint": "7.0.0",
-    "eslint": "3.8.1"
+    "babel-cli": "^6.24.1",
+    "babel-jest": "^20.0.0",
+    "babel-preset-jolt": "^1.0.0",
+    "eslint-config-jolt": "^1.0.2",
+    "jest": "^20.0.0"
+  },
+  "babel": {
+    "presets": [
+      "jolt"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "jolt"
   },
   "scripts": {
-    "lint": "eslint ."
+    "build": "babel js --out-dir build --ignore '**/*.spec.js'",
+    "lint": "eslint js",
+    "prepublishOnly": "yarn build",
+    "test": "jest"
   }
 }
