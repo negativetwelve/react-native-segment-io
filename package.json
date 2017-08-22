@@ -19,7 +19,7 @@
     "react-native-segment-io.podspec"
   ],
   "dependencies": {
-    "react-native-package": "^2.2.0"
+    "react-native-package": "^2.4.1"
   },
   "peerDependencies": {
     "react-native": "*"
