@@ -1,6 +1,6 @@
 {
   "name": "react-native-segment-io",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "React Native wrapper for Segment.",
   "license": "MIT",
   "author": "Mark Miyashita <negativetwelve@gmail.com>",
