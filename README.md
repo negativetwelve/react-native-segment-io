@@ -7,14 +7,10 @@
 
 React Native wrapper for [Segment](https://segment.com).
 
-## Setup
+## Getting Started
 
-```bash
-# Yarn
+```shell
 yarn add react-native-segment-io
-
-# NPM
-npm install --save react-native-segment-io
 ```
 
 ### iOS with Cocoapods
@@ -27,7 +23,7 @@ pod "react-native-segment-io", path: "../node_modules/react-native-segment-io"
 
 Then run:
 
-```bash
+```shell
 pod install
 ```
 
